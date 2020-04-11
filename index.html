@@ -1,1 +1,72 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=favicon.ico><title>cv</title><link href=/css/app.f54aa2b3.css rel=preload as=style><link href=/css/chunk-vendors.28d652ae.css rel=preload as=style><link href=/js/app.d96a01ab.js rel=preload as=script><link href=/js/chunk-vendors.af6bbf0b.js rel=preload as=script><link href=/css/chunk-vendors.28d652ae.css rel=stylesheet><link href=/css/app.f54aa2b3.css rel=stylesheet></head><body><noscript><strong>We're sorry but cv doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=/js/chunk-vendors.af6bbf0b.js></script><script src=/js/app.d96a01ab.js></script></body></html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ideas Laboratory</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+    	<link rel="stylesheet" type="text/css" href="css/all.css">
+    	<style type="text/css">
+			.thumbnail-parent {
+				background-color: #55595c; 
+				width: 200px; 
+				height: 100%; 
+				font-size: 100px; 
+				position: relative;
+			}
+			.thumbnail-child {
+				position: absolute; 
+				top: 50%; 
+				transform: translateY(-50%) translateX(-50%); 
+				left: 50%;
+			}
+    	</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">
+							<i class="fas fa-home"></i>
+							Gaming Zone
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+
+
+		<div class="container">
+			<h2>Available :</h2>
+			<div class="row mb-2" id="available"></div>
+		</div>
+		<div class="container">
+			<h2>Soon :</h2>
+			<div class="row mb-2" id="soon"></div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		fetch("./manifest.json")
+			.then(function(resp){
+				return resp.json();
+			})
+			.then(function(data){
+				var available = data.available;
+				var soon = data.soon;
+
+				for (var i = available.length - 1; i >= 0; i--) {
+					document.getElementById("available").innerHTML += "<div class='col-md-6'><div class='row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'><div class='col p-4 d-flex flex-column position-static'><strong class='d-inline-block mb-2 text-primary'>" + available[i].category + "</strong><h3 class='mb-0'>" + available[i].title + "</h3><div class='mb-1 text-muted'>" + available[i].publication + "</div><p class='card-text mb-auto'>" + available[i].description + "</p><a href='" + available[i].target + "' class='stretched-link'>Play now !</a></div><div class='col-auto d-none d-lg-block'><div class='thumbnail-parent'><i class='fas fa-globe thumbnail-child'></i></div></div></div></div>";
+				}
+
+				for (var i = soon.length - 1; i >= 0; i--) {
+					document.getElementById("soon").innerHTML += "<div class='col-md-6'><div class='row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'><div class='col p-4 d-flex flex-column position-static'><strong class='d-inline-block mb-2 text-primary'>" + soon[i].category + "</strong><h3 class='mb-0'>" + soon[i].title + "</h3><p class='card-text mb-auto'>" + soon[i].description + "</p></div><div class='col-auto d-none d-lg-block'><div class='thumbnail-parent'><i class='fas fa-globe thumbnail-child'></i></div></div></div></div>";
+				}
+			});
+	</script>
+</html>

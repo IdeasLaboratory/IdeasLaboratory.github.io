@@ -1,0 +1,65 @@
+{
+	"title" : "Régions de France",
+	"description" : "Retrouves les régions françaises sur la carte !",
+	"category" : "Géographie",
+	"difficulty" : "Facile",
+	"settings" : {
+		"nb_questions" : 10
+	},
+	"src" : "test",
+	"img" : "test",
+	"regions" : [
+		{
+			"id" : "corse",
+			"libelle" : "Corse"
+		},
+		{
+			"id" : "PACA",
+			"libelle" : "Provence-Alpes-Côte d'Azur"
+		},
+		{
+			"id" : "occitanie",
+			"libelle" : "Occitanie"
+		},
+		{
+			"id" : "NA",
+			"libelle" : "Nouvelle-Aquitaine"
+		},
+		{
+			"id" : "GE",
+			"libelle" : "Grand-Est"
+		},
+		{
+			"id" : "IDF",
+			"libelle" : "Ile-de-France"
+		},
+		{
+			"id" : "normandie",
+			"libelle" : "Normandie"
+		},
+		{
+			"id" : "bretagne",
+			"libelle" : "Bretagne"
+		},
+		{
+			"id" : "centre",
+			"libelle" : "Centre-Val de Loire"
+		},
+		{
+			"id" : "BFC",
+			"libelle" : "Bourgogne-Franche-Comté"
+		},
+		{
+			"id" : "ARA",
+			"libelle" : "Auvergne-Rhône-Alpes"
+		},
+		{
+			"id" : "HDF",
+			"libelle" : "Hauts-de-France"
+		},
+		{
+			"id" : "PL",
+			"libelle" : "Pays de la Loire"
+		}
+	]
+}

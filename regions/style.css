@@ -1,0 +1,103 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+.region {
+	fill: grey;
+	stroke: #d2d2d2 ;
+	transition: all 0.5s ease-in-out;
+}
+
+.region:hover {
+	fill: #d2d2d2;
+	cursor: pointer;
+}
+
+.region.animation-correct {
+	fill: green;
+}
+
+.region.animation-bad {
+	fill: red;
+}
+
+#header {
+	background-color: grey;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: white;
+	font-size: 1.5em;
+	margin-bottom: 40px;
+}
+
+#to_find {
+	float: left;
+	width: 70%;
+	text-align: center;
+}
+
+#score {
+	float: left;
+	text-align: center;
+	width: 15%;
+}
+
+#question {
+	text-align: center;
+}
+
+#france_region {
+	text-align: center;
+}
+
+#over {
+	width: 100vw;
+	height: 100vh;
+	background-color: grey;
+	color: white;
+	display: none;
+}
+
+.content {
+	top: 50%;
+	position: absolute;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+}
+
+.content div{
+	font-size: 3.5rem;
+	margin-bottom: 20px;
+}
+
+.content span{
+	font-size: 1.5rem;
+	border: solid white 2px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.content span:hover{
+	cursor: pointer;
+	background-color: white;
+	color: grey;
+}
+
+.content a{
+	text-decoration: none;
+	font-size: 1.5rem;
+	border: solid white 2px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: white;
+	color: grey;
+}
+
+.content a:hover{
+	cursor: pointer;
+}

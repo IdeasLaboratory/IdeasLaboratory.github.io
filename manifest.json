@@ -1,0 +1,28 @@
+{
+	"available" : [
+		{
+			"title" : "Regions of France",
+			"target" : "regions/index.html",
+			"category" : "Geography",
+			"publication" : "Apr 11",
+			"description" : "Challenge yourself on regions of France with this game !"
+		}
+	],
+	"soon" : [
+		{
+			"title" : "Departments of France",
+			"category": "Geography",
+			"description" : "Challenge yourself on departments of France with this game !"
+		},
+		{
+			"title" : "Rivers of France",
+			"category": "Geography",
+			"description" : "Challenge yourself on rivers of France with this game !"
+		},
+		{
+			"title" : "Cities of France",
+			"category": "Geography",
+			"description" : "Challenge yourself on cities of France with this game !"
+		}
+	]
+}
