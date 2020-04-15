@@ -32,17 +32,45 @@
     	</style>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">
+				<i class="fas fa-gamepad"></i>
+				<span class="d-none d-lg-inline">Gaming Zone</span>
+			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 					<li class="nav-item active">
 						<a class="nav-link" href="#">
-							<i class="fas fa-home"></i>
-							Gaming Zone
+							<i class="fas fa-globe d-lg-none"></i>
+							Geography
+						</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">
+							<i class="fab fa-fort-awesome d-lg-none"></i>
+							History
+						</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">
+							<i class="fas fa-broom d-lg-none"></i>
+							Art
+						</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">
+							<i class="fas fa-chess-knight d-lg-none"></i>
+							Stratégie
+						</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">
+							<i class="fas fa-donate d-lg-none"></i>
+							Casino
 						</a>
 					</li>
 				</ul>
@@ -52,13 +80,16 @@
 
 
 		<div class="container">
-			<h2>Available :</h2>
+			<h2 class="mt-2">Available :</h2>
 			<div class="row mb-2" id="available"></div>
 		</div>
 		<div class="container">
 			<h2>Soon :</h2>
 			<div class="row mb-2" id="soon"></div>
 		</div>
+		<script src="js/jquery-3.4.1.slim.min.js"></script>
+		<!--script src="js/popper.js"></script-->
+		<script src="js/bootstrap.min.js"></script>
 	</body>
 	<script type="text/javascript">
 		fetch("./manifest.json")
