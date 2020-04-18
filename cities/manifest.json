@@ -1,0 +1,121 @@
+{
+	"settings" : {
+		"nb_questions" : 10,
+		"css" : "#",
+		"img" : "#"
+	},
+	"elements" : [
+		{
+			"id" : "rouen",
+			"libelle" : "Rouen"
+		},
+		{
+			"id" : "lille",
+			"libelle" : "Lille"
+		},
+		{
+			"id" : "nancy",
+			"libelle" : "Nancy"
+		},
+		{
+			"id" : "metz",
+			"libelle" : "Metz"
+		},
+		{
+			"id" : "strasbourg",
+			"libelle" : "Strasbourg"
+		},
+		{
+			"id" : "dijon",
+			"libelle" : "Dijon"
+		},
+		{
+			"id" : "paris",
+			"libelle" : "Paris"
+		},
+		{
+			"id" : "orlean",
+			"libelle" : "Orléan"
+		},
+		{
+			"id" : "rennes",
+			"libelle" : "Rennes"
+		},
+		{
+			"id" : "clermont-ferrand",
+			"libelle" : "Clermont-Ferrand"
+		},
+		{
+			"id" : "lyon",
+			"libelle" : "Lyon"
+		},
+		{
+			"id" : "saint-etienne",
+			"libelle" : "Saint-Etienne"
+		},
+		{
+			"id" : "grenoble",
+			"libelle" : "Grenoble"
+		},
+		{
+			"id" : "brest",
+			"libelle" : "Brest"
+		},
+		{
+			"id" : "nantes",
+			"libelle" : "Nantes"
+		},
+		{
+			"id" : "tours",
+			"libelle" : "Tours"
+		},
+		{
+			"id" : "bordeaux",
+			"libelle" : "Bordeaux"
+		},
+		{
+			"id" : "toulouse",
+			"libelle" : "Toulouse"
+		},
+		{
+			"id" : "montpellier",
+			"libelle" : "Montpellier"
+		},
+		{
+			"id" : "nice",
+			"libelle" : "Nice"
+		},
+		{
+			"id" : "toulon",
+			"libelle" : "Toulon"
+		},
+		{
+			"id" : "marseille",
+			"libelle" : "Marseille"
+		},
+		{
+			"id" : "limoges",
+			"libelle" : "Limoges"
+		},
+		{
+			"id" : "poitiers",
+			"libelle" : "Poitiers"
+		},
+		{
+			"id" : "caen",
+			"libelle" : "Caen"
+		},
+		{
+			"id" : "amiens",
+			"libelle" : "Amiens"
+		},
+		{
+			"id" : "bastia",
+			"libelle" : "Bastia"
+		},
+		{
+			"id" : "ajaccio",
+			"libelle" : "Ajaccio"
+		}
+	]
+}

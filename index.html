@@ -37,7 +37,7 @@
 				<i class="fas fa-gamepad"></i>
 				<span class="d-none d-lg-inline">Gaming Zone</span>
 			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<!--button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
@@ -74,17 +74,21 @@
 						</a>
 					</li>
 				</ul>
-			</div>
+			</div-->
 		</nav>
 
-
-
 		<div class="container">
-			<h2 class="mt-2">Available :</h2>
+			<h2 class="mt-2">
+				<i class="far fa-check-circle"></i>
+				Available :
+			</h2>
 			<div class="row mb-2" id="available"></div>
 		</div>
 		<div class="container">
-			<h2>Soon :</h2>
+			<h2>
+				<i class="far fa-calendar-check"></i>
+				Soon :
+			</h2>
 			<div class="row mb-2" id="soon"></div>
 		</div>
 		<script src="js/jquery-3.4.1.slim.min.js"></script>
@@ -101,11 +105,11 @@
 				var soon = data.soon;
 
 				for (var i = available.length - 1; i >= 0; i--) {
-					document.getElementById("available").innerHTML += "<div class='col-md-6'><div class='row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'><div class='col p-4 d-flex flex-column position-static'><strong class='d-inline-block mb-2 text-primary'>" + available[i].category + "</strong><h3 class='mb-0'>" + available[i].title + "</h3><div class='mb-1 text-muted'>" + available[i].publication + "</div><p class='card-text mb-auto'>" + available[i].description + "</p><a href='" + available[i].target + "' class='stretched-link'>Play now !</a></div><div class='col-auto d-none d-lg-block'><div class='thumbnail-parent'><i class='fas fa-globe thumbnail-child'></i></div></div></div></div>";
+					document.getElementById("available").innerHTML += "<div class='col-md-6'><div class='row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'><div class='col p-4 d-flex flex-column position-static'><strong class='d-inline-block mb-2 " + available[i].color + "'>" + available[i].category + "</strong><h3 class='mb-0'>" + available[i].title + "</h3><div class='mb-1 text-muted'>" + available[i].publication + "</div><p class='card-text mb-auto'>" + available[i].description + "</p><a href='" + available[i].target + "' class='stretched-link'>Play now !</a></div><div class='col-auto d-none d-lg-block'><div class='thumbnail-parent'><i class='" + available[i].icon + " thumbnail-child'></i></div></div></div></div>";
 				}
 
 				for (var i = soon.length - 1; i >= 0; i--) {
-					document.getElementById("soon").innerHTML += "<div class='col-md-6'><div class='row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'><div class='col p-4 d-flex flex-column position-static'><strong class='d-inline-block mb-2 text-primary'>" + soon[i].category + "</strong><h3 class='mb-0'>" + soon[i].title + "</h3><p class='card-text mb-auto'>" + soon[i].description + "</p></div><div class='col-auto d-none d-lg-block'><div class='thumbnail-parent'><i class='fas fa-globe thumbnail-child'></i></div></div></div></div>";
+					document.getElementById("soon").innerHTML += "<div class='col-md-6'><div class='row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'><div class='col p-4 d-flex flex-column position-static'><strong class='d-inline-block mb-2 " + soon[i].color + "'>" + soon[i].category + "</strong><h3 class='mb-0'>" + soon[i].title + "</h3><p class='card-text mb-auto'>" + soon[i].description + "</p></div><div class='col-auto d-none d-lg-block'><div class='thumbnail-parent'><i class='" + soon[i].icon + " thumbnail-child'></i></div></div></div></div>";
 				}
 			});
 	</script>

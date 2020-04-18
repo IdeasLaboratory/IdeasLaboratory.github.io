@@ -4,25 +4,42 @@
 			"title" : "Regions of France",
 			"target" : "regions/index.html",
 			"category" : "Geography",
+			"color": "text-success",
+			"icon": "fas fa-globe",
 			"publication" : "Apr 11, 2020",
 			"description" : "Challenge yourself on regions of France with this game !"
+		},
+		{
+			"title" : "Cities of France",
+			"target": "cities/index.html",
+			"category": "Geography",
+			"color": "text-success",
+			"icon": "fas fa-globe",
+			"publication" : "Apr 18, 2020",
+			"description" : "Challenge yourself on cities of France with this game !"
 		}
 	],
 	"soon" : [
 		{
 			"title" : "Departments of France",
 			"category": "Geography",
+			"color": "text-success",
+			"icon": "fas fa-globe",
 			"description" : "Challenge yourself on departments of France with this game !"
 		},
 		{
 			"title" : "Rivers of France",
 			"category": "Geography",
+			"color": "text-success",
+			"icon": "fas fa-globe",
 			"description" : "Challenge yourself on rivers of France with this game !"
 		},
 		{
-			"title" : "Cities of France",
-			"category": "Geography",
-			"description" : "Challenge yourself on cities of France with this game !"
+			"title" : "History events",
+			"category": "History",
+			"color": "text-primary",
+			"icon": "fab fa-fort-awesome",
+			"description" : "Challenge yourself on history events, with our timeline of the death !"
 		}
 	]
 }
